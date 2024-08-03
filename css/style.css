@@ -108,6 +108,7 @@ nav a {
   width: 50px;
   margin-right: 30px;
 }
+
 .footer-blogimg {
   width: 50px;
 }
@@ -139,11 +140,55 @@ nav a {
 
   nav ul {
     flex-direction: column;
+    margin-left: 0;
+    padding: 0;
   }
 
   nav a {
     padding: 10px;
     display: block;
+    margin: 0 auto;
+  }
+
+  .continer1,
+  .continer2,
+  .continer3,
+  .continer4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduce1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .introduce1-gitimg,
+  .introduce1-blog,
+  .introduce1-continer {
+    position: static;
+    margin: 10px auto;
+  }
+
+  .introduce2-img,
+  .continer3-img,
+  .continer4-1img,
+  .continer4-2img {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .footer-gitimg,
+  .footer-blogimg {
+    margin: 5px 0;
   }
 }
 
@@ -156,7 +201,6 @@ nav a {
 
   section {
     margin-top: 0px;
-
     width: 70%;
   }
 
