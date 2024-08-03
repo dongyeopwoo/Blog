@@ -24,6 +24,10 @@ nav ul {
   font-size: 150%;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 nav a {
   color: white;
   text-decoration: none;
