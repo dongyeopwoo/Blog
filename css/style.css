@@ -183,7 +183,7 @@ section div h2 {
   }
 
   nav ul {
-    margin-left: -10%;
+    margin-left: 10%;
     font-size: 80%;
   }
 
@@ -226,7 +226,7 @@ section div h2 {
   }
 
   .continer3 h2 {
-    font-size: 100%;
+    font-size: 80%;
   }
 
   .continer4-1img {
@@ -237,7 +237,7 @@ section div h2 {
   }
 
   .continer4 h2 {
-    font-size: 100%;
+    font-size: 80%;
   }
 }
 
