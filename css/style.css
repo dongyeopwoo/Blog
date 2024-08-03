@@ -201,13 +201,13 @@ section div h2 {
 
   nav ul {
     margin-left: 10%;
-    font-size: 80%;
+    font-size: 12px;
     margin-top: 5px;
   }
 
   .continer1-img {
     margin-left: 9%;
-    margin-top: -40%;
+    margin-top: -36%;
     width: 50%;
     height: 50%;
   }
@@ -215,24 +215,24 @@ section div h2 {
   .hi {
     margin-top: -135px;
     font-size: 70%;
-    margin-left: -140%;
+    margin-left: -60px;
   }
 
   #typing {
-    margin-left: -140%;
+    margin-left: -60px;
     margin-top: -5px;
-    font-size: 55%;
+    font-size: 61%;
   }
 
   .introduce2 {
-    margin-top: -150px;
+    margin-top: -145px;
     width: 350px;
     margin-left: 5%;
-    font-size: 30%;
+    font-size: 6px;
   }
 
   .introduce1-gitimg {
-    margin-left: -50px;
+    margin-left: -60px;
     width: 15px;
   }
   .introduce1-blog {
@@ -251,7 +251,7 @@ section div h2 {
 
   .continer3 h2 {
     margin-top: 10px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .continer4-1img {
@@ -262,7 +262,7 @@ section div h2 {
   }
 
   .continer4 h2 {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
