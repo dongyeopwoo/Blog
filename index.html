@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>동엽 블로그</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/pro.png" />
+    <link rel="apple-touch-icon" href="images/pro.png" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">홈</a></li>
-          <li><a href="#">개발 일지</a></li>
-          <li><a href="#">포트폴리오 결과</a></li>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="Develop.html">개발 일지</a></li>
+          <li><a href="Portfolio.html">포트폴리오 결과</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
         <div class="continer1">
-          <img src="images/pro.png" style="width: 500px" />
+          <img src="images/pro.png" class="continer1-img" />
           <div class="introduce1">
-            <h2>안녕하세요</h2>
+            <h2 class="hi">안녕하세요!</h2>
             <h2 id="typing"></h2>
+            <img src="images/githublogo.png" class="introduce1-gitimg" />
+            <img src="images/blog.png" class="introduce1-blog" />
           </div>
         </div>
-        <div>
-          <img src="images/back.png" class="introduce1-continer" />
-          <img src="images/githublogo.png" class="introduce1-gitimg" />
-          <img src="images/blog.png" class="introduce1-blog" />
-        </div>
+
         <!------------------------------------------------------------->
         <div class="continer2">
           <div class="introduce2">
-            <h2 style="color: #a2cfa6">
-              HTML, React, React Native, Java, Java Script, Spring, Spring Boot,
-              h2, My SQL
+            <h2 style="color: #650f0f">
+              HTML, React, React Native, Java, Java Script, <br />
+              Spring, Spring Boot, h2, My SQL
             </h2>
-            <h2>등을 사용하여 제작 하고있습니다.</h2>
+            <h2 style="color: black">
+              저는 이 언어 및 프레임워크 등등을 <br />상황에 맞게 주로 사용하여
+              프로그램을 <br />제작 하고있습니다.
+            </h2>
           </div>
           <img src="images/stack.png" class="introduce2-img" />
         </div>
         <!------------------------------------------------------------>
         <div class="continer3">
           <img src="images/gitimg.png" class="continer3-img" />
-          <h2>
+          <h2 style="color: black">
             깃 허브에는 각종 개발한 항목들과 블로그에 쓰이는 백준 문제들을
             업로드 중입니다.
           </h2>
@@ -54,18 +57,17 @@
           <img src="images/joon1.png" class="continer4-1img" />
           <img src="images/joon2.png" class="continer4-2img" />
 
-          <h2>
+          <h2 style="color: black">
             또한 블로그를 이용해 개발하며 생겼던 오류나, 백준 알고리즘의 정보를
             공유하고 있습니다 :)
           </h2>
         </div>
+        <div style="text-align: center">
+          <img src="images/githublogo.png" class="footer-gitimg" />
+          <img src="images/blog.png" class="footer-blogimg" />
+        </div>
       </section>
     </main>
-    <div class="footer">
-      <img src="images/githublogo.png" class="footer-gitimg" />
-      <img src="images/blog.png" class="footer-blogimg" />
-    </div>
-
     <script src="js/index.js"></script>
   </body>
 </html>
