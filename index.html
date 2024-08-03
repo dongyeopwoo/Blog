@@ -3,33 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Website</title>
+    <title>동엽 블로그</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to My Responsive Website</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">홈</a></li>
+          <li><a href="#">개발 일지</a></li>
+          <li><a href="#">포트폴리오 결과</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <h2>About Us</h2>
-        <p>This is a simple responsive website example.</p>
-      </section>
-      <section>
-        <h2>Our Services</h2>
-        <p>We offer a variety of services to meet your needs.</p>
+        <div class="continer1">
+          <img src="/Rectangle 4.png" style="width: 500px" />
+          <div class="introduce1">
+            <h2>안녕하세요</h2>
+            <h2 id="typing"></h2>
+            <!-- 타이핑 애니메이션 텍스트 -->
+          </div>
+        </div>
+        <div>
+          <img src="Rectangle 6.png" class="introduce1-continer" />
+          <img
+            src="/free-icon-github-logo-25231.png"
+            class="introduce1-gitimg"
+          />
+          <img src="블로그2.png" class="introduce1-blog" />
+        </div>
+        <!------------------------------------------------------------->
+        <div class="continer2">
+          <div class="introduce2">
+            <h2 style="color: #a2cfa6">
+              HTML, React, React Native, Java, Java Script, Spring, Spring Boot,
+              h2, My SQL
+            </h2>
+            <h2>등을 사용하여 제작 하고있습니다.</h2>
+          </div>
+          <img src="Group 1 (2).png" class="introduce2-img" />
+        </div>
+        <!------------------------------------------------------------>
+        <div class="continer3">
+          <img
+            src="스크린샷 2024-08-03 오후 4.17.00.png"
+            class="continer3-img"
+          />
+          <h2>
+            깃 허브에는 각종 개발한 항목들과 블로그에 쓰이는 백준 문제들을
+            업로드 중입니다.
+          </h2>
+        </div>
+        <!------------------------------------------------------------>
+        <div class="continer4">
+          <img
+            src="스크린샷 2024-08-03 오후 4.20.18.png"
+            class="continer4-1img"
+          />
+          <img
+            src="스크린샷 2024-08-03 오후 4.22.16.png"
+            class="continer4-2img"
+          />
+
+          <h2>
+            또한 블로그를 이용해 개발하며 생겼던 오류나, 백준 알고리즘의 정보를
+            공유하고 있습니다 :)
+          </h2>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2024 Responsive Website</p>
-    </footer>
+    <div class="footer">
+      <img src="free-icon-github-logo-25231.png" class="footer-gitimg" />
+      <img src="블로그2.png" class="footer-blogimg" />
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const text = "웹과 앱을 개발 하고 있는 우동엽 입니다 :)";
+        let index = 0;
+
+        function type() {
+          if (index < text.length) {
+            document.getElementById("typing").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, 100); // 타이핑 속도 조절 (100ms 간격)
+          }
+        }
+
+        type(); // 타이핑 애니메이션 시작
+
+        // 애니메이션이 적용될 요소들
+        const elements = document.querySelectorAll(
+          ".continer1, .continer2, .continer3, .continer4"
+        );
+
+        // 요소가 뷰포트에 진입했는지 확인
+        function checkScroll() {
+          elements.forEach((element) => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top <= window.innerHeight - 100) {
+              element.classList.add("fadeInUp");
+            }
+          });
+        }
+
+        // 스크롤 이벤트 감지
+        window.addEventListener("scroll", checkScroll);
+        checkScroll(); // 페이지 로드 시 초기 상태 확인
+      });
+    </script>
   </body>
 </html>

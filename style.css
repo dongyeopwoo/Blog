@@ -3,12 +3,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 header {
-  background-color: #333;
+  background-color: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
 }
 
 header h1 {
@@ -17,15 +18,120 @@ header h1 {
 
 nav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  padding: 10;
   display: flex;
-  justify-content: space-around;
+  margin-left: 1150px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  margin-right: 40px;
+}
+
+.continer1 {
+  display: flex;
+  margin-top: 100px;
+}
+
+.continer2 {
+  margin-top: 200px;
+  display: flex;
+}
+
+.continer3 {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.continer4 {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.introduce1 {
+  margin-left: 80px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.introduce2 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.introduce1-gitimg {
+  position: absolute;
+  width: 45px;
+  margin-top: -125px;
+  margin-left: 590px;
+}
+
+.introduce1-blog {
+  position: absolute;
+  width: 45px;
+  margin-top: -120px;
+  margin-left: 650px;
+}
+
+.introduce2-img {
+  width: 500px;
+}
+
+.continer3-img {
+  width: 1050px;
+}
+
+.continer4-1img {
+  width: 500px;
+}
+
+.continer4-2img {
+  width: 500px;
+}
+
+.introduce1-continer {
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 570px;
+  width: 150px;
+}
+
+.footer {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  height: 80px;
+}
+
+.footer-gitimg {
+  margin-top: 12px;
+  width: 50px;
+  margin-right: 30px;
+}
+.footer-blogimg {
+  width: 50px;
+}
+
+#typing {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.continer1,
+.continer2,
+.continer3,
+.continer4 {
+  opacity: 0; /* 초기 상태를 숨김으로 설정 */
+  transform: translateY(-50px); /* 위에서 아래로 이동 */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+/* 요소가 보일 때 적용될 스타일 */
+.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* 모바일 스타일 (최대 767px) */
@@ -53,6 +159,12 @@ nav a {
   }
 
   section {
-    width: 45%;
+    margin-top: 0px;
+
+    width: 70%;
+  }
+
+  section div h2 {
+    color: white;
   }
 }
