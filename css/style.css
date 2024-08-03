@@ -183,7 +183,8 @@ section div h2 {
   }
 
   nav ul {
-    justify-content: center;
+    justify-content: center; /* 가운데 정렬 유지 */
+    margin-left: 0%;
   }
 
   .continer1-img {
@@ -237,5 +238,39 @@ section div h2 {
 
   .continer4 h2 {
     font-size: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1220px) {
+  section {
+    width: 95%;
+  }
+
+  .continer1 {
+    width: 95%;
+    margin-left: -10px;
+  }
+
+  .continer2 {
+    width: 95%;
+    margin-left: 60px;
+  }
+
+  .introduce2 {
+    margin-top: 150px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+
+  .continer1-img {
+    margin-top: 50px;
+    width: 300px;
+    height: 250px;
+  }
+
+  .introduce2-img {
+    margin-top: 100px;
+    width: 400px;
+    height: 300px;
   }
 }
