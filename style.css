@@ -1,0 +1,58 @@
+/* 기본 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 모바일 스타일 (최대 767px) */
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 10px;
+    display: block;
+  }
+}
+
+/* 데스크탑 스타일 (최소 768px) */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  section {
+    width: 45%;
+  }
+}
