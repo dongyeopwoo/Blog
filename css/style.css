@@ -185,6 +185,7 @@ section div h2 {
   nav ul {
     justify-content: center; /* 가운데 정렬 유지 */
     margin-left: 0%;
+    font-size: 80%;
   }
 
   .continer1-img {
