@@ -293,7 +293,7 @@ section div h2 {
     font-size: 25px;
   }
 }
-
+/* 모바일 */
 @media (max-width: 768px) {
   .introduce1 {
     width: 40px;
@@ -309,7 +309,6 @@ section div h2 {
 
   header {
     margin-left: -50px;
-    text-align: center;
     height: 40px;
   }
 
@@ -338,12 +337,12 @@ section div h2 {
 
   nav ul {
     margin-left: 10%;
-    font-size: 12px;
+    font-size: 25px;
     margin-top: 5px;
   }
 
   .continer1-img {
-    margin-left: 25px;
+    margin-left: 60px;
     margin-top: -100px;
     width: 100px;
     height: 80px;
@@ -369,7 +368,7 @@ section div h2 {
 
   .continer2,
   h2 {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .continer3-1 {
@@ -424,7 +423,7 @@ section div h2 {
   }
 
   .continer4 h2 {
-    font-size: 10px;
+    font-size: 7px;
   }
 }
 
