@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const text = "웹과 앱을 개발 하고 있는 우동엽 입니다 :)";
+  const text = "웹과 앱을 개발 하고 있는\n" + "우동엽 입니다 :)";
   let index = 0;
 
   function type() {
